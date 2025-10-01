@@ -22,7 +22,7 @@ npm install gh-pages --save-dev
 
 subimos los archivos al github, manual o con
 
-git inite
+git init
 git remote add origin https://github.com/TU_USUARIO/TU_REPO.git
 git branch -M main
 git add .
