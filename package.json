@@ -22,7 +22,7 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "update": "git add . && git commit -m \"update\" && git push origin main && npm run deploy"
+    "update": "git add . && git commit -m \"update\" && git push origin main && npm run deploy" 
   },
   "eslintConfig": {
     "extends": [

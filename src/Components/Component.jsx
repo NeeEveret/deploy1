@@ -34,7 +34,7 @@ export default function Component() {
     //enviar el dato a la api
     try {
       // const respuesta = await fetch("https://node-api-para-recordar.onrender.com/teto", {
-      const respuesta = await fetch("http://localhost:4000/teto", {  
+      const respuesta = await fetch("https://node-api-para-recordar.onrender.com/teto", {  
         method: "POST",
         headers: {
           "Content-Type": "application/json"
