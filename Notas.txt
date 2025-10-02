@@ -1,0 +1,89 @@
+instalar node
+npx create-react-app . -->para crear el proyecto en la carpeta deseada
+
+
+enf -->de snipets crea una funcion flecha
+
+para desplegar github pages, netlify, firebase
+npm start --> para iniciar local
+
+
+con github pages
+
+npm install gh-pages --save-dev
+
+  "homepage": "https://NeeEveret.github.io/deploy1", añadir esto en packaje.json
+
+
+"predeploy": "npm run build",		esto en scripts de json
+"deploy": "gh-pages -d build"
+
+
+
+subimos los archivos al github, manual o con
+INICIAR GitHub
+git init
+git remote add origin https://github.com/TU_USUARIO/TU_REPO.git
+git branch -M main
+
+//subir archivos a git
+git add .
+git commit -m "primer commit"
+git push -u origin main
+
+
+luego 
+npm run deploy		 si no funciona reinstala las dependencias con rm -rf node_modules package-lock.json
+
+luego npm install y intentar npm run deploy
+
+
+Instalar react-scripts manualmente por si no lo encuentra
+npm install react-scripts --save
+------------------------------------ actualizargga
+🔄 Flujo de actualización en GitHub Pages con React
+
+Haces cambios en tu proyecto
+Editas componentes, CSS, etc.
+
+Guardas y haces commit en tu repo
+
+git add .
+git commit -m "actualización de componentes"
+git push origin main
+
+
+Esto actualiza tu rama main en GitHub.
+
+Vuelves a hacer el deploy
+
+npm run deploy
+
+
+Esto genera una nueva build (npm run build) y actualiza la rama gh-pages.
+
+Refrescas tu página publicada
+Esperas unos segundos y tu sitio ya estará actualizado en:
+
+https://TU_USUARIO.github.io/TU_REPO
+
+
+⚡ En resumen:
+
+Push → actualiza el código en GitHub.
+
+Deploy → actualiza la página publicada en gh-pages.
+
+
+
+----------------------update, se agrego el comando update en scripts de json para actualizar rapido
+npm run update
+Y hará automáticamente:
+
+git add . → agrega los cambios.
+
+git commit -m "update" → hace el commit con el mensaje "update".
+
+git push origin main → sube el código a GitHub.
+
+npm run deploy → actualiza GitHub Pages.
