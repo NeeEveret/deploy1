@@ -72,6 +72,7 @@ export default function Component() {
     <div className='divContainer'>
       <div >Pega el texto aquí</div>
       <div>TOCA ESPERARR si o si</div>
+      <div>Empiezo a entender</div>
       <input className='InputTexto'type='text' value={text} onChange={textOnChange}/>
       <div className='divButtomContainer'>
         <button className='divButtomInt' onClick={buttonOnClick}>Actualizar</button>
