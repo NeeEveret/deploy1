@@ -8,4 +8,5 @@ export default defineConfig({
     port: 3000,   // 👈 aquí eliges el puerto
     strictPort: true, // si está ocupado, falla en vez de usar otro
   },
+  plugins: [react()]
 })

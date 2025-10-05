@@ -78,6 +78,7 @@ export default function Component() {
     };
     //hay que revisar  a cual y que configuraciones estas usando para eñ json
     //Las voces nuevas no aceptap el parametro "pitch", las estandar si
+    
     const urls = ["http://localhost:4000/teto", "https://node-api-para-recordar.onrender.com/teto"];
     // const respuesta = await fetch("https://node-api-para-recordar.onrender.com/teto", {
     //
@@ -88,8 +89,8 @@ export default function Component() {
           // Aquí podrías llamar a tu función que hace el POST real
           // consumirApi(urlsDisponibles[0], textoParaUsar)
           for (const urlA of urlsDisponibles) {
-            const controller = new AbortController();
-            const timeout = setTimeout(() => controller.abort(), 3000); // 3s máx
+            // const controller = new AbortController();
+            // const timeout = setTimeout(() => controller.abort(), 3000); // 3s máx
 
             try {
               const respuesta = await fetch(urlA, {  
