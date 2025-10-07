@@ -25,7 +25,7 @@ export default function Component() {
 
     for (const url of urls) {
       const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 3000); // 3 segundos máx.
+      const timeout = setTimeout(() => controller.abort(), 3000); // 5 segundos máx.
 
       try {
         const respuesta = await fetch(url, {
@@ -90,7 +90,7 @@ export default function Component() {
           // consumirApi(urlsDisponibles[0], textoParaUsar)
           for (const urlA of urlsDisponibles) {
             // const controller = new AbortController();
-            // const timeout = setTimeout(() => controller.abort(), 3000); // 3s máx
+            // const timeout = setTimeout(() => controller.abort(), 5000); // 5s máx
 
             try {
               const respuesta = await fetch(urlA, {  
@@ -98,7 +98,7 @@ export default function Component() {
                 headers: {"Content-Type": "application/json"},
                 body: JSON.stringify(dataJason) // 👈 aquí va el JSON
               });
-          
+
               const data = await respuesta.json(); 
               
               if (data && data.audios) {
@@ -138,7 +138,6 @@ export default function Component() {
 
 };
 
-
   return (
     <div className='divContainer'>
       <div>
@@ -146,7 +145,7 @@ export default function Component() {
         Esta app usa las voces de goolgle
         <p></p>
       </div>
-      <input className='InputTexto'type='text' value={text} onChange={textOnChange}/>
+      <input className='InputTexto'id ={"elidunico1"}type='text' value={text} onChange={textOnChange}/>
       <div className='divButtomContainer'>
         <button className='divButtomInt' onClick={buttonOnClick}>Actualizar</button>
         <button className='divButtomInt' onClick={buttonOnClickStartRecrd}>Enviar a Grabar</button>
