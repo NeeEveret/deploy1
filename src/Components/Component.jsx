@@ -60,7 +60,7 @@ export default function Component() {
       return;
     }
     const textoParaUsar =paramTexto //aqui mando el texto del input para que lo grabe
-
+   
     //GET https://texttospeech.googleapis.com/v1/voices?key=
     /////////////////////////////////////////
     const dataJason = {
